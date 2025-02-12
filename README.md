@@ -87,10 +87,4 @@ Config pc en ligne
                 <option value="120|700">NVIDIA RTX 3080 - Performance : +120 | Prix : €700</option>
                 <option value="50|250">AMD RX 6600 - Performance : +50 | Prix : €250</option>
                 <option value="100|600">AMD RX 6800 XT - Performance : +100 | Prix : €600</option>
-                <option value="130|800">AMD RX 7900 XTX - Performance : +130 | Prix : €800</option>
-            </select>
-
-            <label for="ram">Mémoire RAM :</label>
-            <select id="ram" onchange="updateConfiguration()">
-                <option value="20|50">8 Go - Performance : +20 | Prix : €50</option>
-                <option valu
+                <option value="130|800">
