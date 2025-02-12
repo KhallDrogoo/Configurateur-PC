@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurateur PC</title>
+    
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Configurateur PC</h1>
+        <nav>
+            <a href="#configurator">Configurer</a> |
+            <a href="#about">À propos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="configurator" class="configurator">
+            <h2>Configurez votre PC</h2>
+
+            <label for="cpu">Processeur (CPU) :</label>
+            <select id="cpu" onchange="updateConfiguration()">
+                <option value="50|200">Intel i5 - Performance : +50 | Prix : €200</option>
+                <option value="80|300">Intel i7 - Performance : +80 | Prix : €300</option>
+                <option value="100|400">Intel i9 - Performance : +100 | Prix : €400</option>
+                <option value="40|150">AMD Ryzen 5 - Performance : +40 | Prix : €150</option>
+                <option value="70|250">AMD Ryzen 7 - Performance : +70 | Prix : €250</option>
+                <option value="90|350">AMD Ryzen 9 - Performance : +90 | Prix : €350</option>
+            </select>
+
+            <label for="gpu">Carte Graphique (GPU) :</label>
+            <select id="gpu" onchange="updateConfiguration()">
+                <option value="60|300">NVIDIA GTX 1660 - Performance : +60 | Prix : €300</option>
+                <option value="90|500">NVIDIA RTX 3060 - Performance : +90 | Prix : €500</option>
+                <option value="120|700">NVIDIA RTX 3080 - Performance : +120 | Prix : €700</option>
+                <option value="50|250">AMD RX 6600 - Performance : +50 | Prix : €250</option>
+                <option value="100|600">AMD RX 6800 XT - Performance : +100 | Prix : €600</option>
+                <option value="130|800">AMD RX 7900 XTX - Performance : +130 | Prix : €800</option>
+            </select>
+
+            <label for="ram">Mémoire RAM :</label>
+            <select id="ram" onchange="updateConfiguration()">
+                <option value="20|50">8 Go - Performance : +20 | Prix : €50</option>
+                <option value="40|100">16 Go - Performance : +40 | Prix : €100</option>
+                <option value="60|200">32 Go - Performance : +60 | Prix : €200</option>
+                <option value="80|400">64 Go - Performance : +80 | Prix : €400</option>
+            </select>
+
+            <div class="performance" id="performance-output">
+                Performances estimées :
+                <strong>0 points</strong>.
+                Idéal pour la bureautique.
+                Prix total :
+                <strong>€0</strong>.
+            </div>
+
+            <a href="#" class="order-btn" onclick="placeOrder()">Commander ce PC</a>
+        </section>
+
+        <section id="about">
+            <h2>À propos du configurateur PC</h2>
+            <p>Ce configurateur vous permet de créer un PC sur mesure en fonction de vos besoins et de votre budget.</p>
+        </section>
+   </main>
+
+   <!-- Lien vers le script -->
+   <script src="script.js"></script>
+</body>
+</html>
 
